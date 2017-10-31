@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/re_view_1"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/iv_goods_1"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+         />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_introduce_1"
+        android:layout_below="@id/iv_goods_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称"
+        android:layout_marginLeft="7dp"
+        android:singleLine="true"
+        android:textSize="14sp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_below="@id/tv_introduce_1"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:id="@+id/tv_guide_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指导价："
+            android:layout_centerVertical="true"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tv_price_1"
+            android:layout_toRightOf="@id/tv_guide_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="￥0.00"
+            android:singleLine="true"
+            android:layout_alignTop="@id/tv_guide_1"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
